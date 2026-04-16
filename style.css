@@ -1,0 +1,151 @@
+body {
+    background-color: #02050a;
+    color: #e0e0e0;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.bg-glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 210, 255, 0.15), transparent 70%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(2, 5, 10, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo span {
+    color: #00d2ff;
+    transition: text-shadow 0.4s ease;
+}
+
+.logo:hover span {
+    text-shadow: 0 0 15px rgba(0, 210, 255, 0.8);
+}
+
+.menu a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.menu a:hover {
+    color: #00d2ff;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+main {
+    padding-top: 100px;
+}
+
+.hero {
+    padding: 60px 20px;
+}
+
+.info-block {
+    padding: 80px 0;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+h2.section-title {
+    font-size: 36px; 
+    margin-bottom: 30px;
+}
+
+.neon-text {
+    color: #00d2ff;
+    text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    width: 280px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s ease; 
+}
+
+.cards:hover .card {
+    opacity: 0.3;
+    transform: scale(0.9);
+}
+
+.cards .card:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border-color: #00d2ff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.card-icon { 
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    color: #00d2ff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+footer {
+    padding: 40px 0;
+    color: #444;
+}
